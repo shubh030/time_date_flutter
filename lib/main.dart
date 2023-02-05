@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(const MyApp());
@@ -82,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Cusrrunt time: ${time}",
+                  DateFormat('yMMMMd').format(time),
                   style: TextStyle(fontSize: 25),
                 ),
                 ElevatedButton(
